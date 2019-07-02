@@ -7,4 +7,4 @@ db = low(adapter);
 db.defaults({ users: [] })
   .write();
 
-  module.exports = db;
+module.exports = db;
