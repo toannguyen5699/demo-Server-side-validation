@@ -1,0 +1,21 @@
+extends ../layouts/common.pug
+
+block content
+	h1 Users
+	table.table
+		tr
+			th Name
+			th Phone
+			th Action
+	
+		each user in users
+			tr
+				td= user.name
+				td= user.phone
+				td
+					a(href='/users/' + user.id) View
+
+
+	a.btn.btn-primary(href="users/create") NEW
+
+		
